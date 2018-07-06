@@ -1,0 +1,117 @@
+body{
+  background: #ACAEB4;
+  color:#313745;
+  padding-top: 120px;
+}
+h1, h2, h3, h4, h5, h6{
+  color:#313745;
+}
+.navbar-nav{
+  flex-direction: row;
+}
+.title > a{
+  color:white;
+}
+#home{
+  display:flex;
+  flex-direction: row;
+}
+#home > blockquote{
+  background: #ACAEB4;
+  width: 50%;
+  font-family: 'Shrikhand', cursive;
+  font-size: xx-large;
+  justify-content: center;
+  margin: auto;
+  
+}
+.imgContainer{
+  width:50%;
+}
+.mypic{
+  border-radius: 4px;
+  margin-left: -30px;
+  max-width: 100%;
+  height: auto;
+}
+#about{
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 250px;
+}
+#about > h1{
+  width: 40%;
+}
+#about > h1, div{
+  justify-content: center;
+  margin: auto;
+}
+#about > div{
+  width:30%;
+}
+.listContainer > ul{
+  padding: 0px;
+  list-style-type: none;
+  font-size: x-large;
+}
+.li{
+  font-size: large;
+}
+#experience{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  margin-top: 250px;
+}
+#experience > h1{
+  font-weight: 400px;
+  font-size: 80px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.deviconContainer{
+  font-size: 8vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.devicon{
+  margin: 20px 90px;
+  font-family: devicon;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+#projects{
+  margin-top: 250px;
+}
+#projects > h1{
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#why{
+  margin: auto;
+  margin-top: 250px;
+  margin-bottom: 100px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+#why > h1{
+  font-size: 80px;
+}
+#why > h1, p{
+  justify-content: center;
+  margin: auto;
+}
+#why > p{
+  margin-top: 20px;
+  font-size:35px;
+}
