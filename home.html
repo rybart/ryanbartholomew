@@ -16,25 +16,26 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
   <div class = 'container-fluid'>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <h1 class="title"><a href="#home">Ryan Bartholomew</a></h1> 
-    <ul class="navbar-nav nav">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#why">Why</a></li>
-    </ul>
-  </nav>
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#why">Why</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
   </div>
   
   <div class = 'content-container'>
     <div id="home">
-      <blockquote>Everyone should know how to program a computer, because it teaches you how to think!<br/>
+      <blockquote class = 'mediumText'>Everyone should know how to program a computer, because it teaches you how to think!<br/>
       - Steve Jobs</blockquote>
       <div class = 'imgContainer'>
         <img src="./media/headShot.jpg" alt="photo" class="mypic">
@@ -42,9 +43,9 @@
     </div>
 
     <div id="about">
-      <h1 class="description">I am a passionate programmer set on making the web a better place. </h1>
+      <h1 class="description largeText">I am a passionate programmer set on making the web a better place. </h1>
       <div class = 'listContainer'>
-      <h2>A few things about me:</h2>
+      <h2 class = 'largeText'>A few things about me:</h2>
       <ul>
         <li class = 'li'>My family and God come first.</li>
         <li class = 'li'>Music makes life good!</li>
@@ -54,26 +55,26 @@
     </div>
 
     <div id="experience">
-      <h1>What I know</h1>
+      <h1 class = 'hugeText'>What I know</h1>
       <div class = 'deviconContainer'>
-        <i class="devicon devicon-bootstrap-plain-wordmark"></i>
-        <i class="devicon devicon-css3-plain-wordmark"></i>
-        <i class="devicon devicon-express-original-wordmark"></i>
-        <i class="devicon devicon-git-plain-wordmark"></i>
-        <i class="devicon devicon-github-plain-wordmark"></i>
-        <i class="devicon devicon-heroku-original-wordmark"></i>
-        <i class="devicon devicon-html5-plain-wordmark"></i>
         <i class="devicon devicon-javascript-plain"></i>
-        <i class="devicon-mongodb-plain-wordmark"></i>
-        <i class="devicon devicon-mocha-plain"></i>
-        <i class="devicon-nodejs-plain-wordmark"></i>
-        <i class="devicon devicon-postgresql-plain-wordmark"></i>
+        <i class="devicon devicon-css3-plain-wordmark"></i>
+        <i class="devicon devicon-html5-plain-wordmark"></i>
         <i class="devicon devicon-react-original-wordmark"></i>
-        <i class="devicon devicon-sass-original"></i>
+        <i class="devicon devicon-nodejs-plain-wordmark"></i>
+        <i class="devicon devicon-postgresql-plain-wordmark"></i>
+        <i class="devicon smalldev devicon-bootstrap-plain-wordmark"></i>
+        <i class="devicon smalldev devicon-express-original-wordmark"></i>
+        <i class="devicon smalldev devicon-git-plain-wordmark"></i>
+        <i class="devicon smalldev devicon-github-plain-wordmark"></i>
+        <i class="devicon smalldev devicon-heroku-original-wordmark"></i>
+        <i class="devicon smalldev devicon-mongodb-plain-wordmark"></i>
+        <i class="devicon smalldev devicon-mocha-plain"></i>
+        <i class="devicon smalldev devicon-sass-original"></i>
       </div>
     </div>
     <div id = 'projects' class="container">
-      <h1>What I've Done</h1>
+      <h1 class = 'hugeText'>What I've Done</h1>
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -98,7 +99,7 @@
       </div>
     </div>
     <div id="why">
-      <h1>Why am I a programmer?</h1>
+      <h1 class = 'hugeText'>Why am I a programmer?</h1>
       <p>At the end of the 2016, I was making a lot of 'big boy' decisions. I was getting married in April and I needed to decided how my life was going to go. While thinking about which career I wanted to pursue, a mentor of mine asked me what I was passionate about. As a kid, I loved working with computers. I've been a pc gamer for 15 years and just loved everything about them. I was wary of becoming the 'nerd', so I hadn't considered this option. I took a leap and joined up with devMountain and it was the best thing I've ever done (besides getting married...). I love creating, optimizing, and understanding how things work!</p>
     </div>
   </div>
@@ -109,6 +110,14 @@
   </a>
 </footer>
 <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+};
   window.addEventListener("hashchange", function() { scrollBy(0, -120) })
 </script>
 </html>
