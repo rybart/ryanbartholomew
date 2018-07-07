@@ -6,6 +6,11 @@ body{
 h1, h2, h3, h4, h5, h6{
   color:#313745;
 }
+.topnav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
 #home{
   margin-top: 60px;
   display:flex;
@@ -40,11 +45,11 @@ h1, h2, h3, h4, h5, h6{
 #about > h1{
   width: 40%;
 }
-#about > h1, div{
+#about > h1, .listContainer{
   justify-content: center;
   margin: auto;
 }
-#about > div{
+#about > .listContainer{
   width:30%;
 }
 .listContainer > ul{
