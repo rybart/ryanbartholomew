@@ -3,6 +3,9 @@ body{
   color:#313745;
   font-size: 1em;
 }
+.black{
+  color: white;
+}
 h1, h2, h3, h4, h5, h6{
   color:#313745;
 }
@@ -168,6 +171,13 @@ footer > a > h1{
 .topnav .icon {
   display: none;
 }
+.carousel-caption{
+  padding-top: 0
+}
+.carousel-caption > p{
+  padding: 0px;
+  font-size: 20px;
+}
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
@@ -258,5 +268,11 @@ footer > a > h1{
     text-align: center;
     font-size: 5em;
     margin-bottom: 40px;
+  }
+  .carousel-caption{
+    font-size: 10px;
+  }
+  .black{
+    color: black;
   }
 }
