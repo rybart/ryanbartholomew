@@ -24,29 +24,36 @@
     <div class="topnav" id="myTopnav">
       <div>
       <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#why">Why</a>
+      <a href="#about2">About</a>
+      <a href="#experience2">What I know</a>
+      <a href="#projects2">Projects</a>
+      <a href="#why2">Why am I a Programmer</a>
+      <a href="#contact">Contact</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
       </div>
-      <a href="#home" class="active">Ryan Bartholomew</a>      
     </div>
   </div>
   
   <div class = 'content-container'>
     <div id="home">
-      <blockquote class = 'mediumText'>Everyone should know how to program a computer, because it teaches you how to think!<br/>
-      - Steve Jobs</blockquote>
       <div class = 'imgContainer'>
         <img src="./media/headShot.jpg" alt="photo" class="mypic">
+      </div>
+      <div class = 'quoteContainer'>
+        <h1>Ryan Bartholomew</h1>
+        <blockquote class = 'mediumText'>"Everyone should know how to program a computer, because it teaches you how to think!"
+          <br/>
+          <br>
+          - Steve Jobs</blockquote>
+        
+        <br/>
       </div>
     </div>
 
     <div id="about">
-      <h1 class="description largeText">I am a passionate programmer set on making the web a better place. </h1>
+      <h1 class="description largeText" id = 'about2'>I am a passionate programmer set on making the web a better place. </h1>
       <div class = 'listContainer'>
       <h2 class = 'largeText'>A few things about me:</h2>
       <ul>
@@ -58,7 +65,7 @@
     </div>
 
     <div id="experience">
-      <h1 class = 'hugeText'>What I know</h1>
+      <h1 class = 'hugeText' id = 'experience2'>What I know</h1>
       <div class = 'deviconContainer'>
         <i class="devicon devicon-javascript-plain"></i>
         <i class="devicon devicon-css3-plain-wordmark"></i>
@@ -77,7 +84,7 @@
       </div>
     </div>
     <div id = 'projects' class="container">
-      <h1 class = 'hugeText'>What I've Done</h1>
+      <h1 class = 'hugeText' id = 'projects2'>Projects</h1>
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -102,14 +109,20 @@
       </div>
     </div>
     <div id="why">
-      <h1 class = 'hugeText'>Why am I a programmer?</h1>
-      <p>At the end of the 2016, I was making a lot of 'big boy' decisions. I was getting married in April and I needed to decided how my life was going to go. While thinking about which career I wanted to pursue, a mentor of mine asked me what I was passionate about. As a kid, I loved working with computers. I've been a pc gamer for 15 years and just loved everything about them. I was wary of becoming the 'nerd', so I hadn't considered this option. I took a leap and joined up with devMountain and it was the best thing I've ever done (besides getting married...). I love creating, optimizing, and understanding how things work!</p>
+      <h1 class = 'hugeText' id = 'why2'>Why am I a programmer?</h1>
+      <p>I have always loved computers. When I graduated High School, I was going to pursue a degree in Accounting. I still loved computers but thought they were nerdy. When I heard about devMountain, I decided to take a leap and try it out. So far, that was the best decision I have made. I love knowing how a website works and seeing how each programmer has their own style.</p>
     </div>
   </div>
 </body>
 <footer>
   <a href="https://github.com/rybart" class="githubLink" target="_blank">
-    <i class="devicon-github-plain"></i>
+    <img class = 'linkedin' src="./media/github.png" alt="github">
+  </a>
+  <a href="https://www.linkedin.com/in/ryan-bartholomew-034b48135" target='_blank'>
+    <img class = 'linkedin' src="./media/linkedin.png" alt="Linkedin">
+  </a>
+  <a href="mailto:ryanjohnbartholomew@gmail.com">
+    <img src="./media/gmail.png" alt="Email" id = 'contact'>
   </a>
 </footer>
 <script>
@@ -121,6 +134,6 @@
         x.className = "topnav";
     }
 };
-  window.addEventListener("hashchange", function() { scrollBy(0, -120) })
+  window.addEventListener("hashchange", function() { scrollBy(0, -70) })
 </script>
 </html>

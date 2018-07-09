@@ -9,19 +9,28 @@ h1, h2, h3, h4, h5, h6{
 .topnav{
   display: flex;
   flex-direction: row;
-  justify-content: space-between
+  justify-content: space-between;
 }
 #home{
   margin-top: 60px;
   display:flex;
   flex-direction: row;
 }
-#home > blockquote{
+.quoteContainer{
+  display: flex;
+  flex-direction: column;
+}
+.quoteContainer > h1{
+  text-align: center;
+  font-size: 6.5em;
+  margin-bottom: 40px;
+}
+#home > div > blockquote{
   border: none;
   background: #ACAEB4;
-  width: 50%;
   font-family: 'Shrikhand', cursive;
   font-size:  3em;
+  text-align: center;
   justify-content: center;
   margin: auto;
   
@@ -29,7 +38,7 @@ h1, h2, h3, h4, h5, h6{
 
 .imgContainer{
   width:50%;
-  margin-left: -30px;
+  margin-left: 20px;
 }
 .mypic{
   border-radius: 4px;
@@ -99,7 +108,7 @@ h1, h2, h3, h4, h5, h6{
 #why{
   margin: auto;
   margin-top: 250px;
-  margin-bottom: 100px;
+  margin-bottom: 300px;
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -114,14 +123,21 @@ h1, h2, h3, h4, h5, h6{
   font-size:35px;
 }
 footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   font-weight: 400px;
   font-size: 80px;
   margin: auto;
   margin-bottom: 50px;
 }
-footer > a{
-  color: #313745;
-  margin-left: 100px;
+
+footer > a > img{
+  margin: auto;
+  height: 50px;
+}
+footer > a > h1{
+  font-size: 60px;
 }
 .topnav {
   z-index: 3;
@@ -199,7 +215,7 @@ footer > a{
   #about > h1{
     width: 80%;
   }
-  #about > div{
+  #about > .listContainer{
     width:80%;
   }
   #projects{
@@ -223,14 +239,24 @@ footer > a{
   #why{
     width: 90%;
     margin-top: 100px;
+    margin-bottom: 100px;
   }
   footer{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
   }
   footer > a{
     font-size: 40px;
     margin-left: 0px;
+  }
+  footer > a > img{
+    margin: auto;
+    height: 30px;
+  }
+  .quoteContainer > h1{
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 40px;
   }
 }
