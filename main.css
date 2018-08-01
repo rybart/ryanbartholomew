@@ -97,6 +97,7 @@ h1, h2, h3, h4, h5, h6 {
     align-content: center;
     margin: auto;
     height: 100vh;
+    margin-top: 100px;
     margin-bottom: 100px;
 }
 
@@ -266,6 +267,9 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0px;
         font-size: 20px;
     }
+@media screen and (max-width: 1700px){
+    
+}
 @media screen and (max-width: 1600px){
     .projTitle{
         font-size:30px;
