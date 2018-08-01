@@ -370,7 +370,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
     @media screen and (max-width: 600px) {
-        .mypic {
+        body {
+            background-image: linear-gradient(red, yellow);
         }
 
         .topnav a:not(:first-child) {
