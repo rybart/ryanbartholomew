@@ -371,7 +371,7 @@ h1, h2, h3, h4, h5, h6 {
 }
     @media screen and (max-width: 600px) {
         body {
-            background-image: linear-gradient(red, yellow);
+            background-image: url("./media/mobileBackground.JPG");
         }
 
         .topnav a:not(:first-child) {
