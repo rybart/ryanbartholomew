@@ -415,13 +415,13 @@ h1, h2, h3, h4, h5, h6 {
     }
 @media screen and (max-width: 600px) {
     .mypic{
-        max-height:227px
+        max-height:200px
     }
     .landingPageName{
         text-align:center;
     }
     .deviconContainer{
-        font-size:15vw;
+        font-size:15vw;S
     }
     #experience{
         height:auto;
