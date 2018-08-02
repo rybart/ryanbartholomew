@@ -374,8 +374,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
     @media screen and (max-width: 600px) {
-        body{
-            background:#01313f;
+        body {
+            background-image: url("./media/IMG_0127.JPG");
         }
 
         .topnav a:not(:first-child) {
